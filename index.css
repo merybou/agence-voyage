@@ -1,0 +1,172 @@
+
+
+
+nav {
+ 
+  padding: 45px 0px 45px 0px;
+}
+
+nav a {
+  margin-left: 100px;
+  padding: 0px 20px 0px 20px;
+  color: #D8673F;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap; /*pour ne pas revenir en ligne*/
+}
+
+ a{
+  text-decoration: none;
+  color: #D8673F;}
+
+ a:hover {color: #5EA151;
+  }
+
+  .active {
+    color: #5EA151;
+  }
+
+  header h1 {margin-left: 20px;
+    color: #38A698;
+    padding: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  hr {
+    width: 253px;
+  }
+
+  .slide img {height: 400px;
+   width: 500px;
+ } 
+
+ .slides { 
+   width: calc(500px * 3);
+
+   animation:  glisse 5s infinite;
+ }
+
+ .slider { margin: 150px auto; 
+  overflow: hidden;
+  width: 500px;
+  height: 400px;}
+
+  .slide {
+    float: left;
+  }
+
+
+  @keyframes glisse { 
+    0% { transform: translateX(0); }
+
+
+    33% { transform: translateX(-500px); }
+
+
+    66% { transform: translateX(-1000px); }
+
+
+
+    100% { transform: translateX(0); }
+
+  }
+
+
+  section{
+    text-align: center;}
+
+
+    section article {
+     display: inline-block;
+     margin-right: 20px;
+
+   }
+
+   figure img {
+     width: 300px;
+
+   }
+
+
+   footer div {
+    text-align: center;
+    margin-right: 100px;
+  }
+
+  p a {
+    color: #D222BF;
+  }
+
+  p a:hover{
+    color: #D22255;
+  }
+  
+
+  footer { 
+  	display: flex;
+    align-items: center; 
+    justify-content:space-around;
+    padding: 5px; 
+    margin-top: 30px;
+    background-position: top;
+    background-image: url(images/jemm.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+
+  }
+  #table {
+    height: 30px;
+    width: 230px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav a {
+      padding: 7px;
+    }
+
+    footer {
+      flex-direction: column;
+      background-image: none;
+      background-color: lightgrey;
+
+    }
+    footer div {
+      margin: 10px 25px 0px 25px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+
+   nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   nav a {
+    padding: 7px;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    background-image: none;
+    background-color: lightgrey;
+  }
+
+  footer div {
+    margin: 10px 25px 0px 25px;
+  }
+
+}
+
